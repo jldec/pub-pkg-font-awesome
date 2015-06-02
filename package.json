@@ -1,0 +1,31 @@
+{
+  "name": "pub-pkg-font-awesome",
+  "version": "2.0.0",
+  "description": "Use Font Awesome v4.3.0 glyphs from pub-server markdown",
+  "main": "pub-config.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "pub-theme-doc": "^1.0.1",
+    "pub-pkg-seo": "^1.0.0"
+  },
+  "keywords": [
+    "publish",
+    "markdown",
+    "icon",
+    "font",
+    "awesome"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jldec/pub-pkg-font-awesome.git"
+  },
+  "scripts": {
+    "readme":  "pub",
+    "docedit": "pub doc",
+    "docout":  "pub -O doc",
+    "docview": "pub -S doc/gh-pages doc"
+  },
+  "author": "jurgen leschner",
+  "license": "code: MIT, fonts: SIL OFL 1.1"
+}
