@@ -4,22 +4,6 @@ template: preview
 
 ## Icons
 
-
----- /#logo ----
-
-# [pub-pkg-font-awesome](/)
-
-
----- /#topmenu ----
-
-[_!github lg fw_](http://github.com/jldec/pub-pkg-font-awesome "Github Repo")
-
-
----- /#navicon ----
-
-_!navicon fw lg_
-
-
 ---- /preview.hbs ----
 
 {{{html}}}

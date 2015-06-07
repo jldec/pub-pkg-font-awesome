@@ -1,12 +1,11 @@
 {
   "name": "pub-pkg-font-awesome",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Use Font Awesome v4.3.0 glyphs from pub-server markdown",
   "main": "pub-config.js",
   "dependencies": {
   },
   "devDependencies": {
-    "pub-theme-doc": "^1.0.1",
     "pub-pkg-seo": "^1.0.0"
   },
   "keywords": [

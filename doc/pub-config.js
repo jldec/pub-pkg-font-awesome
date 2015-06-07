@@ -1,12 +1,15 @@
 // pub-config for the pub-pkg-font-awesome doc site
 
 var opts = module.exports = {
+  docTitle:    'pub-pkg-font-awesome',
   appUrl:      'http://jldec.github.io/pub-pkg-font-awesome',
+  github:      'http://github.com/jldec/pub-pkg-font-awesome ',
+
   pkgs:        ['pub-theme-doc', 'pub-pkg-seo', '..'],
-  sources:     ['../README.md', { path:'./index.md', fragmentDelim:1 }],
-  outputs:     ['./gh-pages'],
+  sources:     ['../README.md', './index.md'],
+  outputs:     [{ path:'./gh-pages', relPaths:1 }],
   staticPaths: ['../.gitignore'],
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
-  copyright:   'Copyright (c) 2015 Jürgen Leschner - github.com/jldec',
-  relPaths:    1
+
+  copyright:   'Copyright (c) 2015 Jürgen Leschner - github.com/jldec - MIT License'
 }

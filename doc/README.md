@@ -5,84 +5,71 @@ This is the source for the pub-pkg-font-awesome website.
 ### [index.md](https://raw.githubusercontent.com/jldec/pub-pkg-font-awesome/master/doc/index.md)
 
 ```
----- / ----
-title: Icons
-template: preview
+    ---- / ----
+    title: Icons
+    template: preview
 
-## Icons
+    ## Icons
 
+    ---- /preview.hbs ----
 
----- /#logo ----
+    {{{html}}}
 
-# [pub-pkg-font-awesome](/)
-
-
----- /#topmenu ----
-
-[_!github lg fw_](http://github.com/jldec/pub-pkg-font-awesome "Github Repo")
-
-
----- /#navicon ----
-
-_!navicon fw lg_
+    <div class="jstfy">
+    {{#eachFa~}}
+    <div class="blox">{{{faIcon name 'lg'}}}<span class="lbl">{{name}}</span></div>
+    {{/eachFa}}
+    </div>
 
 
----- /preview.hbs ----
+    ---- /Condensed ----
+    template: condensed
 
-{{{html}}}
+    ## Condensed
 
-<div class="jstfy">
-{{#eachFa~}}
-<div class="blox">{{{faIcon name 'lg'}}}<span class="lbl">{{name}}</span></div>
-{{/eachFa}}
-</div>
+    ---- /condensed.hbs ----
 
+    {{{html}}}
 
----- /Condensed ----
-template: condensed
-
-## Condensed
-
----- /condensed.hbs ----
-
-{{{html}}}
-
-{{#eachFa~}}
-<div class="blox">{{{faIcon name}}}</div>
-{{/eachFa}}
+    {{#eachFa~}}
+    <div class="blox">{{{faIcon name}}}</div>
+    {{/eachFa}}
 
 
----- /css/pub-pkg-font-awesome-doc.css ----
-nocrawl:1
-notemplate:1
+    ---- /css/pub-pkg-font-awesome-doc.css ----
+    nocrawl:1
+    notemplate:1
 
-.jstfy { text-align:justify; }
-.blox  { display:inline-block; text-align:center; cursor:pointer; }
-.blox .lbl { display:block; width:100%; padding:0 0.5em 1em 0.5em; font-size:14px; color:#999; }
-.blox .fa  { color:#34a7d6; line-height:1.6em; width:1.6em; }
-.blox:hover .fa { color:#fff; background-color:#34a7d6; }
-.blox:hover .lbl { color:#000; }
+    .jstfy { text-align:justify; }
+    .blox  { display:inline-block; text-align:center; cursor:pointer; }
+    .blox .lbl { display:block; width:100%; padding:0 0.5em 1em 0.5em; font-size:14px; color:#999; }
+    .blox .fa  { color:#34a7d6; line-height:1.6em; width:1.6em; }
+    .blox:hover .fa { color:#fff; background-color:#34a7d6; }
+    .blox:hover .lbl { color:#000; }
 
 
----- /.nojekyll ----
-nocrawl:1
-notemplate:1
+    ---- /.nojekyll ----
+    nocrawl:1
+    notemplate:1
 ```
 
-### [pub-config.js](https://github.com/jldec/pub-pkg-font-awesome/blob/master/doc/pub-config.js) 
+### [pub-config.js](https://github.com/jldec/pub-pkg-font-awesome/blob/master/doc/pub-config.js)
 
 ```
 // pub-config for the pub-pkg-font-awesome doc site
 
 var opts = module.exports = {
+  docTitle:     'pub-pkg-font-awesome',
   appUrl:      'http://jldec.github.io/pub-pkg-font-awesome',
+  github:      'http://github.com/jldec/pub-pkg-font-awesome ',
+
   pkgs:        ['pub-theme-doc', 'pub-pkg-seo', '..'],
-  sources:     ['../README.md', { path:'./index.md', fragmentDelim:1 }],
-  outputs:     ['./gh-pages'],
+  sources:     ['../README.md', './index.md'],
+  outputs:     [{ path:'./gh-pages', relPaths:1 }],
   staticPaths: ['../.gitignore'],
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
-  copyright:   'Copyright (c) 2015 Jürgen Leschner - github.com/jldec',
-  relPaths:    1
+
+  copyright:   'Copyright (c) 2015 Jürgen Leschner - github.com/jldec - MIT License'
 }
 ```
 
@@ -103,7 +90,7 @@ from package.json
 This repo is using a gh-pages workflow using subtree merges
 described [here](http://rafeca.com/2012/01/17/automate-your-release-flow/).
 
-Instead of merge -s subtree which can be unreliable, we using the following steps 
+Instead of merge -s subtree which can be unreliable, we using the following steps
 to identify the `<tree-ish>` for `doc/gh-pages/` and then `git read-tree`
 
 ```sh
