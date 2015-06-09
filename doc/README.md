@@ -59,15 +59,15 @@ This is the source for the pub-pkg-font-awesome website.
 // pub-config for the pub-pkg-font-awesome doc site
 
 var opts = module.exports = {
-  docTitle:     'pub-pkg-font-awesome',
+  docTitle:    'pub-pkg-font-awesome',
   appUrl:      'http://jldec.github.io/pub-pkg-font-awesome',
-  github:      'http://github.com/jldec/pub-pkg-font-awesome ',
+  github:      'http://github.com/jldec/pub-pkg-font-awesome',
 
   pkgs:        ['pub-theme-doc', 'pub-pkg-seo', '..'],
   sources:     ['../README.md', './index.md'],
-  outputs:     [{ path:'./gh-pages', relPaths:1 }],
   staticPaths: ['../.gitignore'],
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
+  outputs:     [{ path:'./gh-pages', relPaths:1 }],
 
   copyright:   'Copyright (c) 2015 Jürgen Leschner - github.com/jldec - MIT License'
 }
@@ -87,17 +87,12 @@ from package.json
 
 ### gh-pages workflow
 
-This repo is using a gh-pages workflow using subtree merges
-described [here](http://rafeca.com/2012/01/17/automate-your-release-flow/).
-
-Instead of merge -s subtree which can be unreliable, we using the following steps
-to identify the `<tree-ish>` for `doc/gh-pages/` and then `git read-tree`
+Instead of merge -s subtree which can be unreliable, we using the following
+to read the tree in `doc/gh-pages/`
 
 ```sh
-git ls-tree -r -t HEAD
 git checkout gh-pages
-git read-tree -u -m <tree-ish>
-git diff
-git add -A
+git read-tree -u -m master:doc/gh-pages
 git commit -m 'publish gh-pages'
+git push
 ```

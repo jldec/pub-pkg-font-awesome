@@ -6,7 +6,6 @@
   "dependencies": {
   },
   "devDependencies": {
-    "pub-pkg-seo": "^1.0.0"
   },
   "keywords": [
     "publish",
