@@ -1,6 +1,8 @@
 # pub-pkg-font-awesome
 
-Use [Font Awesome](http://fontawesome.io/) v4.3.0 glyphs from [pub-server](https://github.com/jldec/pub-server) markdown
+[http://jldec.github.io/pub-pkg-font-awesome](http://jldec.github.io/pub-pkg-font-awesome/readme)
+
+Use [Font Awesome](http://fontawesome.io/) v4.4.0 glyphs from [pub-server](https://github.com/jldec/pub-server) markdown
 
 
 ## Installation
@@ -30,11 +32,15 @@ E.g. in link text:
 [Link to facebook _!facebook_](your-facebook-url)
 ```
 
+> [Link to facebook _!facebook_](your-facebook-url)
+
 Or in a heading:
 
 ```md
 ### _!warning_ Warning
 ```
+
+> ### _!warning_ Warning
 
 For a complete list of all the icon names see http://jldec.github.io/pub-pkg-font-awesome
 
@@ -46,6 +52,8 @@ You can add css classnames (without the fa- prefix) after the icon name, separat
 ```md
 _!spinner 3x spin_
 ```
+
+> _!spinner 3x spin_
 
 Supported classnames include: `lg`, `2x`, `3x`, `4x`, `5x`, `spin`, `pulse`, `border`, `rotate-90`, `rotate-180`, `rotate-270`, `flip-horizontal`, and `flip-vertical`
 
@@ -90,6 +98,3 @@ Font Awesome CSS are licensed under the MIT License:
 
 #### Plugin code
 (c) Jürgen Leschner -- github.com/jldec -- MIT License
-
-
-
