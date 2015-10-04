@@ -64,7 +64,8 @@ var opts = module.exports = {
   github:      'http://github.com/jldec/pub-pkg-font-awesome',
 
   pkgs:        ['pub-theme-doc', 'pub-pkg-seo', '..'],
-  sources:     ['../README.md', './index.md'],
+  sources:     [{ path:'../README.md', writable:true },
+                { path:'./index.md', writable:true } ],
   staticPaths: ['../.gitignore'],
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
   outputs:     [{ path:'./gh-pages', relPaths:1 }],
