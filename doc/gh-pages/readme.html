@@ -21,7 +21,7 @@
 <body>
 
 <div data-render-layout="main-layout"><header>
-<div id="doctitle"><h1 id="-pub-pkg-font-awesome-"><a href="./">pub-pkg-font-awesome</a></h1>
+<div id="doctitle"><h1 id="pub-pkg-font-awesome"><a href="./">pub-pkg-font-awesome</a></h1>
 </div>
 <div id="topmenu"><ul>
 <li><a href="http://github.com/jldec/pub-pkg-font-awesome" title="github"><span class="fa fa-lg fa-fw">&#xf09b;</span></a></li>
@@ -44,9 +44,9 @@
 <div id="content" class="markdown-body">
 <div data-render-page="default"><div data-render-html="/readme"><h1 id="pub-pkg-font-awesome">pub-pkg-font-awesome</h1>
 <p><a href="http://jldec.github.io/pub-pkg-font-awesome/readme">http://jldec.github.io/pub-pkg-font-awesome</a></p>
-<p>Use <a href="http://fontawesome.io/">Font Awesome</a> v4.4.0 glyphs from <a href="https://github.com/jldec/pub-server">pub-server</a> markdown</p>
+<p>Enables <a href="https://fontawesome.com/v4.7.0/">Font Awesome v4.7.0</a> glyphs from any <a href="https://github.com/jldec/pub-server">pub-server</a> markdown.</p>
 <h2 id="installation">Installation</h2>
-<ol>
+<ol start="undefined">
 <li>install <code>pub-pkg-font-awesome</code> with <code>npm install --save pub-pkg-font-awesome</code></li>
 <li>add <code>pub-pkg-font-awesome</code> to your pub-config <code>pkgs</code></li>
 </ol>
@@ -58,22 +58,19 @@
 <p>This package includes a customized <a href="https://github.com/chjj/marked">marked</a> renderer.</p>
 <p><code>_!{icon-name}_</code> in your markdown, will render <code>&lt;span class=&quot;fa&quot;&gt;{icon-glyph-code}&lt;/span&gt;</code></p>
 <p>E.g. in link text:</p>
-<pre><code class="lang-md">[Link to facebook _!facebook_](your-facebook-url)
-</code></pre>
+<pre><code class="language-md">[Link to facebook _!facebook_](your-facebook-url)</code></pre>
 <blockquote>
 <p><a href="your-facebook-url">Link to facebook <span class="fa">&#xf09a;</span></a></p>
 </blockquote>
 <p>Or in a heading:</p>
-<pre><code class="lang-md">### _!warning_ Warning
-</code></pre>
+<pre><code class="language-md">### _!warning_ Warning</code></pre>
 <blockquote>
-<h3 id="_-warning_-warning"><span class="fa">&#xf071;</span> Warning</h3>
+<h3 id="warning-warning"><span class="fa">&#xf071;</span> Warning</h3>
 </blockquote>
 <p>For a complete list of all the icon names see <a href="http://jldec.github.io/pub-pkg-font-awesome">http://jldec.github.io/pub-pkg-font-awesome</a></p>
 <h5 id="controlling-icon-size-and-other-features">Controlling icon size and other features</h5>
 <p>You can add css classnames (without the fa- prefix) after the icon name, separated with space. E.g.</p>
-<pre><code class="lang-md">_!spinner 3x spin_
-</code></pre>
+<pre><code class="language-md">_!spinner 3x spin_</code></pre>
 <blockquote>
 <p><span class="fa fa-3x fa-spin">&#xf110;</span></p>
 </blockquote>
@@ -94,16 +91,36 @@ Block helper for enumerating all the glyphs. The iterator produces {name: glyph:
 </li>
 </ul>
 <p>E.g. The HTML for the Condensed icon-list page was generated using the following:</p>
-<pre><code class="lang-html">{{#eachFa~}}
+<pre><code class="language-html">{{#eachFa~}}
 &lt;div class=&quot;blox&quot;&gt;{{{faIcon name}}}&lt;/div&gt;
-{{/eachFa}}
-</code></pre>
-<h2 id="attribution">Attribution</h2>
-<p>Font Awesome by Dave Gandy - <a href="http://fontawesome.io">http://fontawesome.io</a></p>
+{{/eachFa}}</code></pre>
+<h2 id="font-awesome-v470-license"><a href="https://fontawesome.com/v4.7.0/license/">Font Awesome v4.7.0 License</a></h2>
 <h4 id="font-license">Font License</h4>
-<p>The Font Awesome font is licensed under the SIL OFL 1.1 - <a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a></p>
-<p>Font Awesome CSS are licensed under the MIT License:</p>
-<h4 id="plugin-code">Plugin code</h4>
+<ul>
+<li>Applies to all desktop and webfont files in the fonts directory:</li>
+<li>License: SIL OFL 1.1</li>
+<li>URL: <a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a></li>
+</ul>
+<h4 id="code-license">Code License</h4>
+<ul>
+<li>Applies to CSS and LESS files in the following directories: font-awesome/css/, font-awesome/less/, and font-awesome/scss/.
+  License: MIT License
+  URL: <a href="http://opensource.org/licenses/mit-license.html">http://opensource.org/licenses/mit-license.html</a></li>
+</ul>
+<h4 id="documentation-license">Documentation License</h4>
+<ul>
+<li>Applies to all Font Awesome project files that are not a part of the Font or Code licenses.</li>
+<li>License: CC BY 3.0</li>
+<li>URL: <a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a></li>
+</ul>
+<h4 id="brand-icons">Brand Icons</h4>
+<ul>
+<li>All brand icons are trademarks of their respective owners.</li>
+<li>The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.</li>
+<li>Brand icons should only be used to represent the company or product to which they refer.</li>
+<li>Please do not use brand logos for any purpose except to represent that particular brand or service.</li>
+</ul>
+<h2 id="plugin-code">Plugin code</h2>
 <p>(c) Jürgen Leschner -- github.com/jldec -- MIT License</p>
 </div>
 </div>
@@ -114,8 +131,8 @@ Block helper for enumerating all the glyphs. The iterator produces {name: glyph:
 </div>
 
 <script>window.pubRef = {"href":"/readme","relPath":"."};</script>
-<script src="./js/jquery-1.11.3.min.js"></script>
-<script src="./server/pub-ux.js"></script>
-<!-- Copyright (c) 2015 Jürgen Leschner - github.com/jldec - MIT License -->
+<script src="./js/jquery-1.12.4.min.js" ></script>
+<script src="./pub/pub-ux.js" ></script>
+<!-- Copyright (c) 2015-2018 Jürgen Leschner - github.com/jldec - MIT License -->
 </body>
 </html>

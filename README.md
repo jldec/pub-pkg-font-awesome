@@ -2,7 +2,7 @@
 
 [http://jldec.github.io/pub-pkg-font-awesome](http://jldec.github.io/pub-pkg-font-awesome/readme)
 
-Use [Font Awesome](http://fontawesome.io/) v4.4.0 glyphs from [pub-server](https://github.com/jldec/pub-server) markdown
+Enables [Font Awesome v4.7.0](https://fontawesome.com/v4.7.0/) glyphs from any [pub-server](https://github.com/jldec/pub-server) markdown.
 
 
 ## Installation
@@ -86,15 +86,28 @@ E.g. The HTML for the Condensed icon-list page was generated using the following
 ```
 
 
-## Attribution
-Font Awesome by Dave Gandy - http://fontawesome.io
-
+## [Font Awesome v4.7.0 License](https://fontawesome.com/v4.7.0/license/)
 
 #### Font License
-The Font Awesome font is licensed under the SIL OFL 1.1 - http://scripts.sil.org/OFL
+- Applies to all desktop and webfont files in the fonts directory:
+- License: SIL OFL 1.1
+- URL: http://scripts.sil.org/OFL
 
-Font Awesome CSS are licensed under the MIT License:
+#### Code License
+- Applies to CSS and LESS files in the following directories: font-awesome/css/, font-awesome/less/, and font-awesome/scss/.
+    License: MIT License
+    URL: http://opensource.org/licenses/mit-license.html
 
+#### Documentation License
+- Applies to all Font Awesome project files that are not a part of the Font or Code licenses.
+- License: CC BY 3.0
+- URL: http://creativecommons.org/licenses/by/3.0/
 
-#### Plugin code
+#### Brand Icons
+- All brand icons are trademarks of their respective owners.
+- The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.
+- Brand icons should only be used to represent the company or product to which they refer.
+- Please do not use brand logos for any purpose except to represent that particular brand or service.
+
+## Plugin code
 (c) Jürgen Leschner -- github.com/jldec -- MIT License

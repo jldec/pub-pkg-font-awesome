@@ -70,7 +70,7 @@ var opts = module.exports = {
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
   outputs:     [{ path:'./gh-pages', relPaths:1 }],
 
-  copyright:   'Copyright (c) 2015 Jürgen Leschner - github.com/jldec - MIT License'
+  copyright:   'Copyright (c) 2015-2018 Jürgen Leschner - github.com/jldec - MIT License'
 }
 ```
 
