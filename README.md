@@ -1,6 +1,6 @@
 # pub-pkg-font-awesome
 
-[http://jldec.github.io/pub-pkg-font-awesome](http://jldec.github.io/pub-pkg-font-awesome/readme)
+[https://jldec.github.io/pub-pkg-font-awesome](https://jldec.github.io/pub-pkg-font-awesome/readme)
 
 Enables [Font Awesome v4.7.0](https://fontawesome.com/v4.7.0/) glyphs from any [pub-server](https://github.com/jldec/pub-server) markdown.
 
@@ -15,14 +15,14 @@ Enables [Font Awesome v4.7.0](https://fontawesome.com/v4.7.0/) glyphs from any [
 
 This package will inject `<link rel="stylesheet" href="/css/font-awesome.css">` into your main template.
 
-Alternatively, if you set `inject:false` on the theme, you can use one of the mechanisms like the bootstrap CDN described [here](http://fontawesome.io/get-started/).
+Alternatively, if you set `inject:false` on the theme, you can use one of the other mechanisms described [here](https://fontawesome.com/v4.7.0/get-started/).
 
 **Note**: Unlike the regular font-awesome.css, this package does not include a class for every icon. The Markdown renderer will insert the correct icon unicode character into the generated HTML without help from CSS.
 
 
 ## Usage from Markdown
 
-This package includes a customized [marked](https://github.com/chjj/marked) renderer.
+This package includes a customized [marked](https://github.com/markedjs/marked) renderer.
 
 `_!{icon-name}_` in your markdown, will render `<span class="fa">{icon-glyph-code}</span>`
 
@@ -42,7 +42,7 @@ Or in a heading:
 
 > ### _!warning_ Warning
 
-For a complete list of all the icon names see http://jldec.github.io/pub-pkg-font-awesome
+For a complete list of all the icon names see https://jldec.github.io/pub-pkg-font-awesome
 
 
 ##### Controlling icon size and other features
@@ -60,7 +60,7 @@ Supported classnames include: `lg`, `2x`, `3x`, `4x`, `5x`, `spin`, `pulse`, `bo
 `pull-left` and `pull-right` are not supported from markdown, but can be used from a template)
 
 
-For examples of icons with the css classnames see http://fontawesome.io/examples/
+For examples of icons with the css classnames see https://fontawesome.com/v4.7.0/examples/
 
 
 ## Usage from handlebars
@@ -91,17 +91,17 @@ E.g. The HTML for the Condensed icon-list page was generated using the following
 #### Font License
 - Applies to all desktop and webfont files in the fonts directory:
 - License: SIL OFL 1.1
-- URL: http://scripts.sil.org/OFL
+- URL: https://scripts.sil.org/OFL
 
 #### Code License
 - Applies to CSS and LESS files in the following directories: font-awesome/css/, font-awesome/less/, and font-awesome/scss/.
     License: MIT License
-    URL: http://opensource.org/licenses/mit-license.html
+    URL: https://opensource.org/licenses/MIT-license.html
 
 #### Documentation License
 - Applies to all Font Awesome project files that are not a part of the Font or Code licenses.
 - License: CC BY 3.0
-- URL: http://creativecommons.org/licenses/by/3.0/
+- URL: https://creativecommons.org/licenses/by/3.0/
 
 #### Brand Icons
 - All brand icons are trademarks of their respective owners.
