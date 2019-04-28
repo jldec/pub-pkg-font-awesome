@@ -2,7 +2,7 @@
 
 This is the source for the [pub-pkg-font-awesome](https://jldec.github.io/pub-pkg-font-awesome/) website.
 
-### [index.md](https://raw.githubusercontent.com/jldec/pub-pkg-font-awesome/master/doc-src/index.md)
+### [index.md](https://raw.githubusercontent.com/jldec/pub-pkg-font-awesome/master/docs-src/index.md)
 
 ```
     ---- / ----
@@ -53,7 +53,7 @@ This is the source for the [pub-pkg-font-awesome](https://jldec.github.io/pub-pk
     notemplate:1
 ```
 
-### [pub-config.js](https://github.com/jldec/pub-pkg-font-awesome/blob/master/doc-src/pub-config.js)
+### [pub-config.js](https://github.com/jldec/pub-pkg-font-awesome/blob/master/docs-src/pub-config.js)
 
 ```
 // pub-config for the pub-pkg-font-awesome doc site
@@ -68,7 +68,7 @@ var opts = module.exports = {
                 { path:'./index.md', writable:true } ],
   staticPaths: ['../.gitignore'],
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
-  outputs:     [{ path:'../doc', relPaths:1 }],
+  outputs:     [{ path:'../docs', relPaths:1 }],
 
   copyright:   'Copyright (c) 2015-2019 Jürgen Leschner - github.com/jldec - MIT License'
 }
@@ -80,9 +80,9 @@ from package.json
 ```json
 "scripts": {
   "readme":  "pub",
-  "docedit": "pub doc-src",
-  "docout":  "pub -O doc-src",
-  "docview": "pub -S doc"
+  "docedit": "pub docs-src",
+  "docout":  "pub -O docs-src",
+  "docview": "pub -S docs"
 }
 ```
 
@@ -102,5 +102,5 @@ pub -O
 
 To view the locally generated docs from this directory
 ```
-pub -S ../doc
+pub -S ../docs
 ```

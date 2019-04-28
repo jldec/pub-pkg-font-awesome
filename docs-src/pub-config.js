@@ -10,7 +10,7 @@ var opts = module.exports = {
                 { path:'./index.md', writable:true } ],
   staticPaths: ['../.gitignore'],
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
-  outputs:     [{ path:'../doc', relPaths:1 }],
+  outputs:     [{ path:'../docs', relPaths:1 }],
 
   copyright:   'Copyright (c) 2015-2019 Jürgen Leschner - github.com/jldec - MIT License'
 }

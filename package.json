@@ -24,9 +24,9 @@
   },
   "scripts": {
     "readme": "pub",
-    "docedit": "pub doc-src",
-    "docout": "pub -O doc-src",
-    "docview": "pub -S doc"
+    "docedit": "pub docs-src",
+    "docout": "pub -O docs-src",
+    "docview": "pub -S docs"
   },
   "author": "Font Awesome by Dave Gandy - http://fontawesome.io",
   "license": "MIT AND OFL-1.1"
