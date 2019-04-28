@@ -1,10 +1,16 @@
 {
   "name": "pub-pkg-font-awesome",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Use Font Awesome v4.7.0 glyphs from pub-server markdown",
   "main": "pub-config.js",
   "dependencies": {},
   "devDependencies": {},
+  "files": [
+    "css/",
+    "fonts/",
+    "pub-config.js",
+    "generator-plugin.js"
+  ],
   "keywords": [
     "publish",
     "markdown",
@@ -18,9 +24,9 @@
   },
   "scripts": {
     "readme": "pub",
-    "docedit": "pub doc",
-    "docout": "pub -O doc",
-    "docview": "pub -S doc/gh-pages doc"
+    "docedit": "pub doc-src",
+    "docout": "pub -O doc-src",
+    "docview": "pub -S doc"
   },
   "author": "Font Awesome by Dave Gandy - http://fontawesome.io",
   "license": "MIT AND OFL-1.1"

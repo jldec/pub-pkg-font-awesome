@@ -1,8 +1,8 @@
 # pub-pkg-font-awesome doc
 
-This is the source for the pub-pkg-font-awesome website.
+This is the source for the [pub-pkg-font-awesome](https://jldec.github.io/pub-pkg-font-awesome/) website.
 
-### [index.md](https://raw.githubusercontent.com/jldec/pub-pkg-font-awesome/master/doc/index.md)
+### [index.md](https://raw.githubusercontent.com/jldec/pub-pkg-font-awesome/master/doc-src/index.md)
 
 ```
     ---- / ----
@@ -53,7 +53,7 @@ This is the source for the pub-pkg-font-awesome website.
     notemplate:1
 ```
 
-### [pub-config.js](https://github.com/jldec/pub-pkg-font-awesome/blob/master/doc/pub-config.js)
+### [pub-config.js](https://github.com/jldec/pub-pkg-font-awesome/blob/master/doc-src/pub-config.js)
 
 ```
 // pub-config for the pub-pkg-font-awesome doc site
@@ -68,7 +68,7 @@ var opts = module.exports = {
                 { path:'./index.md', writable:true } ],
   staticPaths: ['../.gitignore'],
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
-  outputs:     [{ path:'./gh-pages', relPaths:1 }],
+  outputs:     [{ path:'../doc', relPaths:1 }],
 
   copyright:   'Copyright (c) 2015-2019 Jürgen Leschner - github.com/jldec - MIT License'
 }
@@ -80,20 +80,27 @@ from package.json
 ```json
 "scripts": {
   "readme":  "pub",
-  "docedit": "pub doc",
-  "docout":  "pub -O doc",
-  "docview": "pub -S doc/gh-pages doc"
+  "docedit": "pub doc-src",
+  "docout":  "pub -O doc-src",
+  "docview": "pub -S doc"
 }
 ```
 
 ### gh-pages workflow
 
-Instead of merge -s subtree which can be unreliable, we using the following
-to read the tree in `doc/gh-pages/`
+The [pub-pkg-font-awesome](https://jldec.github.io/pub-pkg-font-awesome/) website is maintained in /docs-src and published from /docs.
 
-```sh
-git checkout gh-pages
-git read-tree -u -m master:doc/gh-pages
-git commit -m 'publish gh-pages'
-git push
+To watch the output while editing the docs in this directory 
+```
+pub
+```
+
+To regenerate the docs from this directory 
+```
+pub -O
+```
+
+To view the locally generated docs from this directory
+```
+pub -S ../doc
 ```
