@@ -25,7 +25,7 @@ template: condensed
 {{{html}}}
 
 {{#eachFa~}}
-<div title="{{{name}}}" class="blox">{{{faIcon name}}}</div>
+<div title="{{{name}}}" class="blox">{{{faIcon name 'lg'}}}</div>
 {{/eachFa}}
 
 

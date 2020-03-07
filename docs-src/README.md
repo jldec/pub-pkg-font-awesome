@@ -70,7 +70,7 @@ var opts = module.exports = {
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
   outputs:     [{ path:'../docs', relPaths:1 }],
 
-  copyright:   'Copyright (c) 2015-2019 Jürgen Leschner - github.com/jldec - MIT License'
+  copyright:   'Copyright (c) 2015-2020 Jürgen Leschner - github.com/jldec - MIT License'
 }
 ```
 
@@ -90,12 +90,12 @@ from package.json
 
 The [pub-pkg-font-awesome](https://jldec.github.io/pub-pkg-font-awesome/) website is maintained in /docs-src and published from /docs.
 
-To watch the output while editing the docs in this directory 
+To watch the output while editing the docs in this directory
 ```
 pub
 ```
 
-To regenerate the docs from this directory 
+To regenerate the docs from this directory
 ```
 pub -O
 ```
