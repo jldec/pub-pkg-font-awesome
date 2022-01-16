@@ -20,7 +20,8 @@
 </head>
 <body>
 
-<div data-render-layout="main-layout"><header>
+<div data-render-layout="main-layout">
+<header>
 <div id="doctitle"><h1 id="pub-pkg-font-awesome"><a href="./">pub-pkg-font-awesome</a></h1>
 </div>
 <div id="topmenu"><ul>
@@ -42,11 +43,12 @@
 
 <div id="main" onclick="">
 <div id="content" class="markdown-body">
-<div data-render-page="default"><div data-render-html="/readme"><h1 id="pub-pkg-font-awesome">pub-pkg-font-awesome</h1>
+<div data-render-page="/readme">
+<div data-render-html="/readme"><h1 id="pub-pkg-font-awesome">pub-pkg-font-awesome</h1>
 <p><a href="https://jldec.github.io/pub-pkg-font-awesome/readme">https://jldec.github.io/pub-pkg-font-awesome</a></p>
 <p>Enables <a href="https://fontawesome.com/v4.7.0/">Font Awesome v4.7.0</a> glyphs from any <a href="https://github.com/jldec/pub-server">pub-server</a> markdown.</p>
 <h2 id="installation">Installation</h2>
-<ol start="undefined">
+<ol>
 <li>install <code>pub-pkg-font-awesome</code> with <code>npm install --save pub-pkg-font-awesome</code></li>
 <li>add <code>pub-pkg-font-awesome</code> to your pub-config <code>pkgs</code></li>
 </ol>
@@ -58,19 +60,22 @@
 <p>This package includes a customized <a href="https://github.com/markedjs/marked">marked</a> renderer.</p>
 <p><code>_!{icon-name}_</code> in your markdown, will render <code>&lt;span class=&quot;fa&quot;&gt;{icon-glyph-code}&lt;/span&gt;</code></p>
 <p>E.g. in link text:</p>
-<pre><code class="language-md">[Link to facebook _!facebook_](your-facebook-url)</code></pre>
+<pre><code class="language-md">[Link to facebook _!facebook_](your-facebook-url)
+</code></pre>
 <blockquote>
 <p><a href="your-facebook-url">Link to facebook <span class="fa">&#xf09a;</span></a></p>
 </blockquote>
 <p>Or in a heading:</p>
-<pre><code class="language-md">### _!warning_ Warning</code></pre>
+<pre><code class="language-md">### _!warning_ Warning
+</code></pre>
 <blockquote>
 <h3 id="warning-warning"><span class="fa">&#xf071;</span> Warning</h3>
 </blockquote>
 <p>For a complete list of all the icon names see <a href="https://jldec.github.io/pub-pkg-font-awesome">https://jldec.github.io/pub-pkg-font-awesome</a></p>
 <h5 id="controlling-icon-size-and-other-features">Controlling icon size and other features</h5>
 <p>You can add css classnames (without the fa- prefix) after the icon name, separated with space. E.g.</p>
-<pre><code class="language-md">_!spinner 3x spin_</code></pre>
+<pre><code class="language-md">_!spinner 3x spin_
+</code></pre>
 <blockquote>
 <p><span class="fa fa-3x fa-spin">&#xf110;</span></p>
 </blockquote>
@@ -93,7 +98,8 @@ Block helper for enumerating all the glyphs. The iterator produces {name: glyph:
 <p>E.g. The HTML for the Condensed icon-list page was generated using the following:</p>
 <pre><code class="language-html">{{#eachFa~}}
 &lt;div class=&quot;blox&quot;&gt;{{{faIcon name}}}&lt;/div&gt;
-{{/eachFa}}</code></pre>
+{{/eachFa}}
+</code></pre>
 <h2 id="font-awesome-v470-license"><a href="https://fontawesome.com/v4.7.0/license/">Font Awesome v4.7.0 License</a></h2>
 <h4 id="font-license">Font License</h4>
 <ul>
@@ -123,16 +129,18 @@ Block helper for enumerating all the glyphs. The iterator produces {name: glyph:
 <h2 id="plugin-code">Plugin code</h2>
 <p>(c) Jürgen Leschner -- github.com/jldec -- MIT License</p>
 </div>
-</div>
+
+</div><!--page-->
 </div>
 <div id="credit"><p><span class="fa">&#xf004;</span> powered by <a href="https://jldec.github.io/pub-doc/">pub-server</a> and <a href="https://github.com/jldec/pub-theme-doc">pub-theme-doc</a></p>
 </div>
 </div>
-</div>
+
+</div><!--layout-->
 
 <script>window.pubRef = {"href":"/readme","relPath":"."};</script>
 <script src="./js/jquery-1.12.4.min.js" ></script>
 <script src="./pub/pub-ux.js" ></script>
-<!-- Copyright (c) 2015-2020 Jürgen Leschner - github.com/jldec - MIT License -->
+<!-- Copyright (c) 2015-2022 Jürgen Leschner - github.com/jldec - MIT License -->
 </body>
 </html>
