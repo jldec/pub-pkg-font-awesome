@@ -12,5 +12,5 @@ var opts = module.exports = {
   injectCss:   ['/css/pub-pkg-font-awesome-doc.css'],
   outputs:     [{ path:'../docs', relPaths:1 }],
 
-  copyright:   'Copyright (c) 2015-2020 Jürgen Leschner - github.com/jldec - MIT License'
+  copyright:   'Copyright (c) 2015-2022 Jürgen Leschner - github.com/jldec - MIT License'
 }
